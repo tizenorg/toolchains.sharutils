@@ -1,0 +1,881 @@
+# translation of sharutils-4.6.1-pre5.po to Dutch
+# Dutch messages for GNU sharutils.
+# Copyright (C) 1996, 2005, 2006 Free Software Foundation, Inc.
+#
+# Erick Branderhorst <branderh@debian.org>, 1996, 2005.
+# Freek de Kruijf <f.de.kruijf@hetnet.nl>, 2005, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: sharutils 4.6.1-pre5\n"
+"Report-Msgid-Bugs-To: bug-gnu-utils@gnu.org\n"
+"POT-Creation-Date: 2007-07-01 04:57-0700\n"
+"PO-Revision-Date: 2006-01-21 00:26+0100\n"
+"Last-Translator: Freek de Kruijf <f.de.kruijf@hetnet.nl>\n"
+"Language-Team: Dutch <vertaling@vrijschrift.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.1\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: lib/error.c:131 lib/error.c:159
+msgid "Unknown system error"
+msgstr "Onbekende systeemfout"
+
+#: lib/getopt.c:694
+#, c-format
+msgid "%s: option `%s' is ambiguous\n"
+msgstr "%s: optie `%s' is niet eenduidig\n"
+
+#: lib/getopt.c:719
+#, c-format
+msgid "%s: option `--%s' doesn't allow an argument\n"
+msgstr "%s: optie `--%s' staat geen argument toe\n"
+
+#: lib/getopt.c:724
+#, c-format
+msgid "%s: option `%c%s' doesn't allow an argument\n"
+msgstr "%s: optie `%c%s' staat geen argument toe\n"
+
+#: lib/getopt.c:742 lib/getopt.c:915
+#, c-format
+msgid "%s: option `%s' requires an argument\n"
+msgstr "%s: optie `%s' vereist een argument\n"
+
+#: lib/getopt.c:771
+#, c-format
+msgid "%s: unrecognized option `--%s'\n"
+msgstr "%s: onbekende optie `--%s'\n"
+
+#: lib/getopt.c:775
+#, c-format
+msgid "%s: unrecognized option `%c%s'\n"
+msgstr "%s: onbekende optie `%c%s'\n"
+
+#: lib/getopt.c:801
+#, c-format
+msgid "%s: illegal option -- %c\n"
+msgstr "%s: ongeldige optie -- %c\n"
+
+#: lib/getopt.c:804
+#, c-format
+msgid "%s: invalid option -- %c\n"
+msgstr "%s: ongeldige optie -- %c\n"
+
+#: lib/getopt.c:834 lib/getopt.c:964
+#, c-format
+msgid "%s: option requires an argument -- %c\n"
+msgstr "%s: optie vereist een argument -- %c\n"
+
+#: lib/getopt.c:881
+#, c-format
+msgid "%s: option `-W %s' is ambiguous\n"
+msgstr "%s: optie `-W %s' is niet eenduidig\n"
+
+#: lib/getopt.c:899
+#, c-format
+msgid "%s: option `-W %s' doesn't allow an argument\n"
+msgstr "%s: optie `-W %s' staat geen argument toe\n"
+
+#: lib/xmalloc.c:67
+msgid "memory exhausted"
+msgstr "geen geheugen meer beschikbaar"
+
+#: src/shar.c:608
+msgid "Note: not verifying md5sums.  Consider installing GNU coreutils."
+msgstr ""
+"Let op: md5sum is niet geverifi�rd.  Overweeg de installatie van 'GNU "
+"coreutils'."
+
+#: src/shar.c:643
+msgid "WARNING: not restoring timestamps.  Consider getting and"
+msgstr ""
+"WAARSCHUWING: tijdsaanduidingen niet teruggezet.  Overweeg het verkrijgen en"
+
+#: src/shar.c:645
+#, fuzzy
+msgid "installing GNU `touch'\\'', distributed in GNU coreutils..."
+msgstr ""
+"installeren van GNU `touch'\\'', gedistribueerd in 'GNU File Utilities'..."
+
+#: src/shar.c:652
+msgid "lock directory '${lock_dir}' exists"
+msgstr "vergrendelmap '${lock_dir}' bestaat"
+
+#: src/shar.c:657
+msgid "failed to create lock directory"
+msgstr "het aanmaken van een vergrendelmap is mislukt"
+
+#: src/shar.c:661
+#, c-format
+msgid "x - created lock directory `'%s\\''."
+msgstr "x - aangemaakte vergrendelmap is `'%s\\''."
+
+#: src/shar.c:663
+#, c-format
+msgid "x - failed to create lock directory `'%s\\''."
+msgstr "x - het aanmaken van vergrendelmap `'%s\\'' is mislukt."
+
+#: src/shar.c:671
+msgid "yes"
+msgstr "ja"
+
+#: src/shar.c:671
+msgid "overwrite this file"
+msgstr "dit bestand overschrijven"
+
+#: src/shar.c:672
+msgid "no"
+msgstr "nee"
+
+#: src/shar.c:672
+msgid "skip this file"
+msgstr "dit bestand overslaan"
+
+#: src/shar.c:673
+msgid "all"
+msgstr "alles"
+
+#: src/shar.c:673
+msgid "overwrite all files"
+msgstr "alle bestanden overschrijven"
+
+#: src/shar.c:674
+msgid "none"
+msgstr "geen"
+
+#: src/shar.c:674
+msgid "overwrite no files"
+msgstr "geen bestanden overschrijven"
+
+#: src/shar.c:675
+msgid "help"
+msgstr "help"
+
+#: src/shar.c:675
+msgid "explain choices"
+msgstr "verklaar de keuze"
+
+#: src/shar.c:676
+msgid "quit"
+msgstr "stop"
+
+#: src/shar.c:676
+msgid "exit immediately"
+msgstr "be�ndig onmiddelijk"
+
+#: src/shar.c:718
+msgid "Too many directories for mkdir generation"
+msgstr "Te veel mappen om aan te maken met mkdir"
+
+#: src/shar.c:737
+#, c-format
+msgid "x - created directory `%s'\\''."
+msgstr "x - aangemaakte map is `%s'\\''."
+
+#: src/shar.c:739
+#, c-format
+msgid "x - failed to create directory `%s'\\''."
+msgstr "x - aanmaken van map `%s'\\'' is mislukt."
+
+#: src/shar.c:806 src/shar.c:1057
+#, c-format
+msgid "Cannot access %s"
+msgstr "Kan geen toegang krijgen tot %s"
+
+#: src/shar.c:860
+msgid "-C is being deprecated, use -Z instead"
+msgstr "-C is verouderd, gebruik nu -Z"
+
+#: src/shar.c:901 src/unshar.c:379
+msgid "Cannot get current directory name"
+msgstr "Kan de naam van de huidige map niet vinden"
+
+#: src/shar.c:965
+msgid ""
+"Archives must be unpacked in sequence!\n"
+"Please unpack part '`cat ${lock_dir}/seq`' next."
+msgstr ""
+"Archieven moeten in volgorde uitgepakt worden!\n"
+"Pak aub als volgende het deel '`cat ${lock_dir}/seq`' uit."
+
+#: src/shar.c:976 src/shar.c:1383
+#, c-format
+msgid "New file, remaining %s, "
+msgstr "Nieuw bestand, nu nog %s, "
+
+#: src/shar.c:977 src/shar.c:1384
+#, c-format
+msgid "Limit still %s\n"
+msgstr "De grens is nog steeds %s\n"
+
+#: src/shar.c:983 src/shar.c:1558 src/shar.c:1574
+#, c-format
+msgid "restore of %s failed"
+msgstr "terugzetten van %s is mislukt"
+
+#: src/shar.c:987
+#, c-format
+msgid "End of part %d, continue with part %d"
+msgstr "Einde van deel %d, doorgaan met deel %d"
+
+#: src/shar.c:1001 src/shar.c:1477
+#, c-format
+msgid "Starting file %s\n"
+msgstr "Beginbestand %s\n"
+
+#: src/shar.c:1052
+#, c-format
+msgid "%s: Not a regular file"
+msgstr "%s: Geen gewoon bestand"
+
+#: src/shar.c:1067
+#, c-format
+msgid "In shar: remaining size %s\n"
+msgstr "In shar: resterende grootte %s\n"
+
+#: src/shar.c:1086
+msgid "empty"
+msgstr "leeg"
+
+#: src/shar.c:1087
+msgid "(empty)"
+msgstr "(leeg)"
+
+#: src/shar.c:1111
+#, c-format
+msgid "Cannot open file %s"
+msgstr "Kan bestand %s niet openen"
+
+#: src/shar.c:1148
+msgid "compressed"
+msgstr "gecomprimeerd"
+
+#: src/shar.c:1149
+msgid "gzipped"
+msgstr "gemaakt met gzip"
+
+#: src/shar.c:1150
+msgid "bzipped"
+msgstr "gemaakt met bzip2"
+
+#: src/shar.c:1151
+msgid "binary"
+msgstr "binair"
+
+#: src/shar.c:1152
+msgid "(compressed)"
+msgstr "(gecomprimeerd)"
+
+#: src/shar.c:1153
+msgid "(gzipped)"
+msgstr "(gemaakt met gzip)"
+
+#: src/shar.c:1154
+msgid "(bzipped)"
+msgstr "(gemaakt met bzip2)"
+
+#: src/shar.c:1155
+msgid "(binary)"
+msgstr "(binair)"
+
+#: src/shar.c:1168
+msgid "Could not fork"
+msgstr "'Fork' is mislukt"
+
+#: src/shar.c:1173 src/shar.c:1233
+#, c-format
+msgid "File %s (%s)"
+msgstr "Bestand %s (%s)"
+
+#: src/shar.c:1227
+msgid "text"
+msgstr "tekst"
+
+#: src/shar.c:1228
+msgid "(text)"
+msgstr "(tekst)"
+
+#: src/shar.c:1251
+#, c-format
+msgid "overwriting %s"
+msgstr "bezig met overschrijven %s"
+
+#: src/shar.c:1253
+#, c-format
+msgid "overwrite %s"
+msgstr "overschrijf %s"
+
+#: src/shar.c:1257
+#, c-format
+msgid "SKIPPING %s"
+msgstr "BEZIG MET OVERSLAAN VAN %s"
+
+#: src/shar.c:1258
+msgid "extraction aborted"
+msgstr "extraheren afgebroken"
+
+#: src/shar.c:1262
+#, c-format
+msgid "SKIPPING %s (file already exists)"
+msgstr "BEZIG MET OVERSLAAN VAN %s (bestand bestaat al)"
+
+#: src/shar.c:1272
+#, c-format
+msgid "Saving %s (%s)"
+msgstr "Bezig met opslaan van %s (%s)"
+
+#: src/shar.c:1276
+#, c-format
+msgid "x - extracting %s %s"
+msgstr "x - bezig met extraheren %s %s"
+
+#: src/shar.c:1392
+#, c-format
+msgid "restore of %s failed\n"
+msgstr "terugzetten van %s is mislukt\n"
+
+#: src/shar.c:1401
+#, c-format
+msgid "End of part %ld, continue with part %ld"
+msgstr "Einde van deel %ld, doorgaan met deel %ld"
+
+#: src/shar.c:1407
+#, c-format
+msgid "End of %s part %d"
+msgstr "Einde van %s deel %d"
+
+#: src/shar.c:1408
+msgid "archive"
+msgstr "archief"
+
+#: src/shar.c:1412
+#, c-format
+msgid "File %s is continued in part %d"
+msgstr "Bestand %s gaat verder in deel %d"
+
+#: src/shar.c:1456
+msgid "Please unpack part 1 first!"
+msgstr "Pak eerst deel 1 uit!"
+
+#: src/shar.c:1460
+msgid "Please unpack part '${shar_sequence}' next!"
+msgstr "Pak eerst deel '${shar_sequence}' uit!"
+
+#: src/shar.c:1471
+#, c-format
+msgid "STILL SKIPPING %s"
+msgstr "NOG STEEDS BEZIG MET OVERSLAAN VAN %s"
+
+#: src/shar.c:1479
+#, c-format
+msgid "continuing file %s"
+msgstr "doorgaan met bestand %s"
+
+#: src/shar.c:1497
+#, c-format
+msgid "File %s is complete"
+msgstr "Bestand %s is compleet"
+
+#: src/shar.c:1504
+#, c-format
+msgid "uudecoding file %s"
+msgstr "bezig met decoderen (uudecode) van bestand %s"
+
+#: src/shar.c:1514
+#, c-format
+msgid "uncompressing file %s"
+msgstr "bezig met decomprimeren van bestand %s"
+
+#: src/shar.c:1522
+#, c-format
+msgid "gunzipping file %s"
+msgstr "bezig met decomprimeren (gunzip) van bestand %s"
+
+#: src/shar.c:1530
+#, c-format
+msgid "bunzipping file %s"
+msgstr "bezig met decomprimeren (bunzip2) van bestand %s"
+
+#: src/shar.c:1585
+msgid "MD5 check failed"
+msgstr "MD5 controle is mislukt"
+
+#: src/shar.c:1641
+#, c-format
+msgid "'restoration warning:  size of %s is not %s'\n"
+msgstr "'herstelwaarschuwing:  grootte van %s is niet %s'\n"
+
+#: src/shar.c:1693
+msgid "allocating output file name"
+msgstr "toevoegen van uitvoerbestandsnaam"
+
+#: src/shar.c:1699
+#, c-format
+msgid "Opening `%s'"
+msgstr "Bezig `%s' te openen"
+
+#: src/shar.c:1710
+#, c-format
+msgid "Closing `%s'"
+msgstr "Bezig `%s' te sluiten"
+
+#: src/shar.c:1722 src/unshar.c:315 src/uudecode.c:442 src/uuencode.c:205
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Probeer `%s --help' voor meer informatie.\n"
+
+#: src/shar.c:1726 src/unshar.c:319
+#, c-format
+msgid "Usage: %s [OPTION]... [FILE]...\n"
+msgstr "Gebruik: %s [OPTIE]... [BESTAND]...\n"
+
+#: src/shar.c:1727
+msgid ""
+"Mandatory arguments to long options are mandatory for short options too.\n"
+msgstr ""
+"Verplichte argumenten bij lange opties zijn ook verplicht bij korte opties.\n"
+
+#: src/shar.c:1730
+msgid ""
+"\n"
+"Giving feedback:\n"
+"      --help              display this help and exit\n"
+"      --version           output version information and exit\n"
+"  -q, --quiet, --silent   do not output verbose messages locally\n"
+msgstr ""
+"\n"
+"Terugmelding:\n"
+"      --help              toon deze hulptekst en be�ndig programma\n"
+"      --version           toon versie-informatie en be�ndig programma\n"
+"  -q, --quiet, --silent   toon lokaal geen uitgebreide berichten\n"
+
+#: src/shar.c:1738
+msgid ""
+"\n"
+"Selecting files:\n"
+"  -p, --intermix-type     allow -[BTzZ] in file lists to change mode\n"
+"  -S, --stdin-file-list   read file list from standard input\n"
+msgstr ""
+"\n"
+"Selectie van bestanden:\n"
+"  -p, --intermix-type     sta -[BTzZ] toe in bestandslijsten om\n"
+"                            de modus te veranderen\n"
+"  -S, --stdin-file-list   lees bestandslijst van standaardinvoer\n"
+
+#: src/shar.c:1745
+msgid ""
+"\n"
+"Selecting files:\n"
+"  -p, --intermix-type     allow -[BTz] in file lists to change mode\n"
+"  -S, --stdin-file-list   read file list from standard input\n"
+msgstr ""
+"\n"
+"Selectie van bestanden:\n"
+"  -p, --intermix-type     sta -[BTz] toe in bestandslijsten om\n"
+"                            de modus te veranderen\n"
+"  -S, --stdin-file-list   lees bestandslijst van standaardinvoer\n"
+
+#: src/shar.c:1752
+msgid ""
+"\n"
+"Splitting output:\n"
+"  -o, --output-prefix=PREFIX    output to file PREFIX.01 through PREFIX.NN\n"
+"  -l, --whole-size-limit=SIZE   split archive, not files, to SIZE kilobytes\n"
+"  -L, --split-size-limit=SIZE   split archive, or files, to SIZE kilobytes\n"
+msgstr ""
+"\n"
+"Uitvoer splitsen:\n"
+"  -o, --output-prefix=VOORL     uitvoer naar bestand VOORL.01 tot VOORL.NN\n"
+"  -l, --whole-size-limit=GRTT   splits archief, geen bestanden, in GRTT "
+"kilobytes\n"
+"  -L, --split-size-limit=GRTT   splits archief, of bestanden, tot GRTT "
+"kilobytes\n"
+
+#: src/shar.c:1759
+msgid ""
+"\n"
+"Controlling the shar headers:\n"
+"  -n, --archive-name=NAME   use NAME to document the archive\n"
+"  -s, --submitter=ADDRESS   override the submitter name\n"
+"  -a, --net-headers         output Submitted-by: & Archive-name: headers\n"
+"  -c, --cut-mark            start the shar with a cut line\n"
+"  -t, --translate           translate messages in the script\n"
+"\n"
+"Selecting how files are stocked:\n"
+"  -M, --mixed-uuencode         dynamically decide uuencoding (default)\n"
+"  -T, --text-files             treat all files as text\n"
+"  -B, --uuencode               treat all files as binary, use uuencode\n"
+"  -z, --gzip                   gzip and uuencode all files\n"
+"  -g, --level-for-gzip=LEVEL   pass -LEVEL (default 9) to gzip\n"
+"  -j, --bzip2                  bzip2 and uuencode all files\n"
+msgstr ""
+"\n"
+"Inhoud van de shar-kop:\n"
+"  -n, --archive-name=NAAM   geef het archief de (informatieve) naam NAAM\n"
+"  -s, --submitter=ADRES     vervang de naam van de archivaris door ADRES\n"
+"  -a, --net-headers         voeg de kopregels Submitted-by: en Archive-name: "
+"toe\n"
+"  -c, --cut-mark            begin de shar met een afbreekregel\n"
+"  -t, --translate           vertaal boodschappen in het script\n"
+"\n"
+"Hoe bestanden behandeld worden:\n"
+"  -M, --mixed-uuencode         laat shar beslissen of uuencode nodig is\n"
+"                               (dit is de standaard)\n"
+"  -T, --text-files             alle bestanden zijn tekstbestanden\n"
+"  -B, --uuencode               alle bestanden zijn binair, gebruik uuencode\n"
+"  -z, --gzip                   pas gzip en uuencode toe op alle bestanden\n"
+"  -g, --level-for-gzip=NIVEAU  gebruik gzip met optie -NIVEAU (standaard -"
+"9)\n"
+"  -j, --bzip2                  pas bzip2 en uuencode toe op alle bestanden\n"
+
+#: src/shar.c:1777
+msgid ""
+"  -Z, --compress               compress and uuencode all files\n"
+"  -b, --bits-per-code=BITS     pass -bBITS (default 12) to compress\n"
+msgstr ""
+"  -Z, --compress               pas compress en uuencode toe op alle "
+"bestanden\n"
+"  -b, --bits-per-code=BITS     geef -bBITS (default 12) door aan compress\n"
+
+#: src/shar.c:1782
+msgid ""
+"\n"
+"Protecting against transmission:\n"
+"  -w, --no-character-count      do not use `wc -c' to check size\n"
+"  -D, --no-md5-digest           do not use `md5sum' digest to verify\n"
+"  -F, --force-prefix            force the prefix character on every line\n"
+"  -d, --here-delimiter=STRING   use STRING to delimit the files in the shar\n"
+"\n"
+"Producing different kinds of shars:\n"
+"  -V, --vanilla-operation   produce very simple and undemanding shars\n"
+"  -P, --no-piping           exclusively use temporary files at unshar time\n"
+"  -x, --no-check-existing   blindly overwrite existing files\n"
+"  -X, --query-user          ask user before overwriting files (not for Net)\n"
+"  -m, --no-timestamp        do not restore file modification dates & times\n"
+"  -Q, --quiet-unshar        avoid verbose messages at unshar time\n"
+"  -f, --basename            restore in one directory, despite hierarchy\n"
+"      --no-i18n             do not produce internationalized shell script\n"
+msgstr ""
+"\n"
+"Bescherming tegen transmissie:\n"
+"  -w, --no-character-count      gebruik geen `wc -c' voor groottecontrole\n"
+"  -D, --no-md5-digest           gebruik geen `md5sum' om te verifi�en\n"
+"  -F, --force-prefix            gebruik het voorvoegkarakter op elke regel\n"
+"  -d, --here-delimiter=TEKST    gebruik TEKST om bestanden te scheiden in de "
+"shar\n"
+"\n"
+"Aanmaken van verschillende soorten shars:\n"
+"  -V, --vanilla-operation   maak eenvoudige en weinig eisende shars\n"
+"  -P, --no-piping           gebruik tijdelijke bestanden tijdens unshar\n"
+"  -x, --no-check-existing   overschrijf bestaande bestanden blindelings\n"
+"  -X, --query-user          vraag gebruiker voor overschrijven bestanden\n"
+"                            (niet voor Net)\n"
+"  -m, --no-timestamp        zet de bestandsmodificatie datum/tijd niet "
+"terug\n"
+"  -Q, --quiet-unshar        voorkom meldingen tijdens unshar\n"
+"  -f, --basename            terugzetten in �n directory, hi�archie "
+"negerend\n"
+"      --no-i18n             maak geen ge�ternationaliseerd shellscript\n"
+
+#: src/shar.c:1800
+msgid ""
+"\n"
+"Option -o is required with -l or -L, option -n is required with -a.\n"
+msgstr ""
+"\n"
+"Optie -o is vereist bij -l of -L, optie -n is vereist bij -a.\n"
+
+#: src/shar.c:1804
+msgid "Option -g implies -z, option -b implies -Z.\n"
+msgstr "Optie -g impliceert -z, optie -b impliceert -Z.\n"
+
+#: src/shar.c:1807
+msgid "Option -g implies -z.\n"
+msgstr "Optie -g impliceert -z.\n"
+
+#. TRANSLATORS: add the contact address for your translation team!
+#: src/shar.c:1811 src/unshar.c:334 src/uudecode.c:453 src/uuencode.c:215
+#, c-format
+msgid "Report bugs to <%s>.\n"
+msgstr ""
+"Rapporteer bugs naar <%s>.\n"
+"Rapporteer opmerkingen over de vertaling naar <vertaling@vrijschrift.org>.\n"
+
+#: src/shar.c:1869
+#, c-format
+msgid "invalid file size limit `%s'"
+msgstr "ongeldige limiet, `%s', van de grootte van een bestand"
+
+#: src/shar.c:1905
+#, c-format
+msgid "invalid format (count field too wide): '%s'\n"
+msgstr "ongeldige opmaak (telveld te breed): '%s'\n"
+
+#: src/shar.c:1966
+msgid "DEBUG was not selected at compile time"
+msgstr "DEBUG niet meevertaald"
+
+#: src/shar.c:1986
+#, c-format
+msgid "Hard limit %s\n"
+msgstr "Harde limiet %s\n"
+
+#: src/shar.c:2028
+msgid "This system doesn't support -Z ('compress'), use -z instead"
+msgstr "Dit systeem ondersteunt -Z ('compress') niet, gebruik -z"
+
+#: src/shar.c:2061
+#, c-format
+msgid "Soft limit %s\n"
+msgstr "Zachte grens %s\n"
+
+#: src/shar.c:2076
+#, c-format
+msgid "illegal output prefix\n"
+msgstr "onjuiste uitvoervoorloopnaam\n"
+
+#: src/shar.c:2123 src/unshar.c:417 src/uudecode.c:491 src/uuencode.c:255
+#, c-format, no-wrap
+msgid ""
+"Copyright (C) %s Free Software Foundation, Inc.\n"
+"This is free software; see the source for copying conditions.  There is NO\n"
+"warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+msgstr ""
+"Copyright (C) %s Free Software Foundation, Inc.\n"
+"Dit is vrije software; zie de bronbestanden voor de kopieervoorwaarden.\n"
+"Er is GEEN garantie; ook niet voor VERKOOPBAARHEID of GESCHIKTHEID VOOR\n"
+"EEN BEPAALD DOEL.\n"
+
+#: src/shar.c:2170
+msgid "WARNING: No user interaction in vanilla mode"
+msgstr "WAARSCHUWING: De normale mode is niet interactief"
+
+#: src/shar.c:2182
+msgid "WARNING: Non-text storage options overridden"
+msgstr "WAARSCHUWING: de opties voor opslag van niet-tekst worden genegeerd"
+
+#: src/shar.c:2238
+msgid "No input files"
+msgstr "Geen invoerbestanden"
+
+#: src/shar.c:2244
+msgid "Cannot use -a option without -n"
+msgstr "Optie -a kan niet zonder -n gebruikt worden"
+
+#: src/shar.c:2250
+msgid "Cannot use -l or -L option without -o"
+msgstr "De opties -l of -L kunnen niet zonder -o gebruikt worden"
+
+#: src/shar.c:2262
+msgid "PLEASE avoid -X shars on Usenet or public networks"
+msgstr "Vermijd -X shars op Usenet en op openbare netwerken"
+
+#: src/shar.c:2303
+msgid "You have unpacked the last part"
+msgstr "Het laatste deel is uitgepakt"
+
+#: src/shar.c:2305
+#, c-format
+msgid "Created %d files\n"
+msgstr "%d bestand(en) aangemaakt\n"
+
+#: src/shar.c:2310
+#, c-format
+msgid "x - removed lock directory `'%s\\''."
+msgstr "x - vergrendelmap `'%s\\'' is verwijderd."
+
+#: src/shar.c:2312
+#, c-format
+msgid "x - failed to remove lock directory `'%s\\''."
+msgstr "x - verwijderen van vergrendelmap `'%s\\'' is mislukt."
+
+#: src/unshar.c:171
+#, c-format
+msgid "Found no shell commands in %s"
+msgstr "Geen shell-opdrachten gevonden in %s"
+
+#: src/unshar.c:187
+#, c-format
+msgid "%s looks like raw C code, not a shell archive"
+msgstr "%s ziet eruit als een C-programma, niet als een shell-archief"
+
+#: src/unshar.c:223
+#, c-format
+msgid "Found no shell commands after `cut' in %s"
+msgstr "Geen shell opdrachten gevonden na `cut' in %s"
+
+#: src/unshar.c:244
+#, c-format
+msgid "%s is probably not a shell archive"
+msgstr "%s is waarschijnlijk geen shell-archief"
+
+#: src/unshar.c:245
+#, c-format
+msgid "The `cut' line was followed by: %s"
+msgstr "Na de `cut'-regel volgde: %s"
+
+#: src/unshar.c:271
+msgid "Starting `sh' process"
+msgstr "Bezig een `sh'-proces op te starten"
+
+#: src/unshar.c:320
+msgid ""
+"Mandatory arguments to long options are mandatory for short options too.\n"
+"\n"
+"  -d, --directory=DIRECTORY   change to DIRECTORY before unpacking\n"
+"  -c, --overwrite             pass -c to shar script for overwriting files\n"
+"  -e, --exit-0                same as `--split-at=\"exit 0\"'\n"
+"  -E, --split-at=STRING       split concatenated shars after STRING\n"
+"  -f, --force                 same as `-c'\n"
+"      --help                  display this help and exit\n"
+"      --version               output version information and exit\n"
+"\n"
+"If no FILE, standard input is read.\n"
+msgstr ""
+"Verplichte argumenten bij lange opties zijn ook verplicht bij korte opties.\n"
+"\n"
+"  -d, --directory=MAP    ga naar MAP alvorens uit te pakken\n"
+"  -c, --overwrite        geef -c aan shar script voor het\n"
+"                           overschrijven van bestanden\n"
+"  -e, --exit-0           zelfde als `--split-at=\"exit 0\"'\n"
+"  -E, --split-at=TEKST   splits samengevoegde shars na TEKST\n"
+"  -f, --force            zelfde als `-c'\n"
+"      --help             toon hulptekst en be�ndig programma\n"
+"      --version          toon versie-informatie en be�ndig programma\n"
+"\n"
+"Als er geen BESTAND is, lees van standaardinvoer.\n"
+
+#: src/unshar.c:397
+#, c-format
+msgid "Cannot chdir to `%s'"
+msgstr "Huidige map op `%s' zetten is mislukt"
+
+#: src/unshar.c:448 src/unshar.c:510
+msgid "allocate file name buffer"
+msgstr "voeg een buffer voor de bestandsnaam toe"
+
+#: src/unshar.c:469
+msgid "standard input"
+msgstr "standaardinvoer"
+
+#: src/unshar.c:531
+msgid "allocate file buffer"
+msgstr "voeg een buffer voor het bestand toe"
+
+#: src/uudecode.c:126 src/uudecode.c:430
+#, c-format
+msgid "%s: Write error"
+msgstr "%s: Schrijffout"
+
+#: src/uudecode.c:144 src/uudecode.c:232
+#, c-format
+msgid "%s: Short file"
+msgstr "%s: Bestand is te kort"
+
+#: src/uudecode.c:180
+#, c-format
+msgid "%s: No `end' line"
+msgstr "%s: Geen `end'-regel"
+
+#: src/uudecode.c:241
+#, c-format
+msgid "%s: data following `=' padding character"
+msgstr "%s: gegevens aanwezig na het `='-vulteken"
+
+#: src/uudecode.c:265 src/uudecode.c:273 src/uudecode.c:287
+#, c-format
+msgid "%s: illegal line"
+msgstr "%s: onjuiste regel"
+
+#: src/uudecode.c:327
+#, c-format
+msgid "%s: No `begin' line"
+msgstr "%s: Geen `begin'-regel"
+
+#: src/uudecode.c:359
+#, c-format
+msgid "%s: Illegal ~user"
+msgstr "%s: Onjuiste ~gebruiker"
+
+#: src/uudecode.c:366
+#, c-format
+msgid "%s: No user `%s'"
+msgstr "%s: Er bestaat geen gebruiker `%s'"
+
+#: src/uudecode.c:390
+#, c-format
+msgid "cannot access %s"
+msgstr "kan geen toegang krijgen tot %s"
+
+#: src/uudecode.c:395
+#, c-format
+msgid "denied writing FIFO (%s)"
+msgstr "kan niet naar FIFO (%s) schrijven"
+
+#: src/uudecode.c:400
+#, c-format
+msgid "not following symlink (%s)"
+msgstr "symbolische koppeling (%s) wordt niet gevolgd"
+
+#: src/uudecode.c:408
+#, fuzzy, c-format
+msgid "freopen of %s"
+msgstr "Bezig fopen op %s toe te passen"
+
+#: src/uudecode.c:414
+#, c-format
+msgid "chmod of %s"
+msgstr ""
+
+#: src/uudecode.c:446
+#, c-format
+msgid "Usage: %s [FILE]...\n"
+msgstr "Gebruik: %s [BESTAND]...\n"
+
+#: src/uudecode.c:447
+msgid ""
+"Mandatory arguments to long options are mandatory to short options too.\n"
+"  -o, --output-file=FILE   direct output to FILE\n"
+"      --help               display this help and exit\n"
+"      --version            output version information and exit\n"
+msgstr ""
+"Verplichte argumenten bij lange opties zijn ook verplicht bij korte opties.\n"
+"  -o, --output-file=BESTAND  uitvoer naar BESTAND\n"
+"      --help               toon deze hulptekst en be�ndig programma\n"
+"      --version            toon versie-informatie en be�ndig programma\n"
+
+#: src/uuencode.c:136 src/uuencode.c:304 src/uuencode.c:311
+msgid "Write error"
+msgstr "Fout bij schrijven"
+
+#: src/uuencode.c:158 src/uuencode.c:189 src/uuencode.c:191
+msgid "Read error"
+msgstr "Fout bij lezen"
+
+#: src/uuencode.c:209
+#, c-format
+msgid "Usage: %s [INFILE] REMOTEFILE\n"
+msgstr "Gebruik: %s [LOKAAL_BESTAND] NIETLOKAAL_BESTAND\n"
+
+#: src/uuencode.c:210
+msgid ""
+"\n"
+"  -m, --base64    use base64 encoding as of RFC1521\n"
+"      --help      display this help and exit\n"
+"      --version   output version information and exit\n"
+msgstr ""
+"\n"
+"  -m, --base64    gebruik base64 codering zoals in RFC1521\n"
+"      --help      toon deze hulptekst en be�ndig programma\n"
+"      --version   toon versie-informatie en be�ndig programma\n"
+
+#: src/uuencode.c:276
+#, c-format
+msgid "fopen-ing %s"
+msgstr "Bezig fopen op %s toe te passen"
+
+#: src/uuencode.c:278
+#, c-format
+msgid "fstat-ing %s"
+msgstr "Bezig fstat op %s toe te passen"
