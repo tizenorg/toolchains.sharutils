@@ -13,6 +13,7 @@ Group:      Applications/Archiving
 License:    GPL
 URL:        http://www.gnu.org/software/sharutils/
 Source0:    ftp://ftp.gnu.org/gnu/sharutils/REL-%{version}/sharutils-%{version}.tar.bz2
+Source1001: packaging/sharutils.manifest 
 BuildRequires:  gettext
 
 BuildRoot:  %{_tmppath}/%{name}-%{version}-build
@@ -41,6 +42,7 @@ Install sharutils if you send binary files through e-mail.
 # << setup
 
 %build
+cp %{SOURCE1001} .
 # >> build pre
 # << build pre
 
@@ -71,6 +73,7 @@ rm -rf %{buildroot}
 
 
 %files -f %{name}.lang
+%manifest sharutils.manifest
 %defattr(-,root,root,-)
 # >> files
 %doc AUTHORS COPYING NEWS README THANKS TODO
