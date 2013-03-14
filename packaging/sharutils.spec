@@ -8,7 +8,7 @@
 Name:       sharutils
 Summary:    The GNU shar utilities for packaging and unpackaging shell archives
 Version:    4.7
-Release:    3
+Release:    4
 Group:      Applications/Archiving
 License:    GPL
 URL:        http://www.gnu.org/software/sharutils/
@@ -36,31 +36,23 @@ Install sharutils if you send binary files through e-mail.
 
 %prep
 %setup -q -n %{name}-%{version}
-# >> setup
-# << setup
 
 %build
 cp %{SOURCE1001} .
-# >> build pre
-# << build pre
 
-%configure --disable-static
+%configure \
+        --disable-static \
+        --disable-nls \
+        --disable-man
 # Call make instruction with smp support
 make %{?jobs:-j%jobs}
 
-# >> build post
-# << build post
 %install
 rm -rf %{buildroot}
-# >> install pre
-# << install pre
 %make_install
 
-# >> install post
 rm -f ${RPM_BUILD_ROOT}%{_infodir}/dir
 chmod 644 AUTHORS ChangeLog COPYING NEWS README THANKS TODO
-# << install post
-%find_lang %{name}
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/license
 for keyword in LICENSE COPYING COPYRIGHT;
@@ -72,16 +64,20 @@ do
 	done;
 done
 
+%remove_docs
+
 %clean
 rm -rf %{buildroot}
 
-%files -f %{name}.lang
+%files
 %manifest sharutils.manifest
 %defattr(-,root,root,-)
-# >> files
-%doc AUTHORS COPYING NEWS README THANKS TODO
 %{_datadir}/license/%{name}
-%{_bindir}/*
-%doc %{_infodir}/*info*
-%doc %{_mandir}/*/*
-# << files
+%exclude /usr/bin/compress-dummy
+%exclude /usr/bin/mail-files
+%exclude /usr/bin/mailshar
+%exclude /usr/bin/remsync
+%exclude /usr/bin/shar
+%exclude /usr/bin/unshar
+/usr/bin/uudecode
+/usr/bin/uuencode
