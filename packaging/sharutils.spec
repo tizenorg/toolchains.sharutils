@@ -10,7 +10,7 @@ Summary:    The GNU shar utilities for packaging and unpackaging shell archives
 Version:    4.7
 Release:    4
 Group:      Applications/Archiving
-License:    GPL
+License:    GPLv3
 URL:        http://www.gnu.org/software/sharutils/
 Source0:    ftp://ftp.gnu.org/gnu/sharutils/REL-%{version}/sharutils-%{version}.tar.bz2
 Source1001: packaging/sharutils.manifest 
@@ -64,6 +64,10 @@ do
 	done;
 done
 
+# license
+mkdir -p %{buildroot}/usr/share/license
+cp COPYING %{buildroot}/usr/share/license/%{name}
+
 %remove_docs
 
 %clean
@@ -81,3 +85,4 @@ rm -rf %{buildroot}
 %exclude /usr/bin/unshar
 /usr/bin/uudecode
 /usr/bin/uuencode
+/usr/share/license/%{name}
