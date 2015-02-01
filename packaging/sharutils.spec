@@ -33,6 +33,7 @@ shar files.
 
 Install sharutils if you send binary files through e-mail.
 
+
 %prep
 %setup -q -n %{name}-%{version}
 
