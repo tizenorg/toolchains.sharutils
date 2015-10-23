@@ -8,13 +8,14 @@
 Name:       sharutils
 Summary:    The GNU shar utilities for packaging and unpackaging shell archives
 Version:    4.7
-Release:    4
+Release:    %{?release_prefix:%{release_prefix}.}4.46.%{?dist}%{!?dist:tizen}
+VCS:        external/sharutils#sharutils_4.7-slp2+s4_1-0-g5d8f6b09f6354025b761a9b2233978498b586b21
 Group:      Applications/Archiving
 License:    GPL
 URL:        http://www.gnu.org/software/sharutils/
 Source0:    ftp://ftp.gnu.org/gnu/sharutils/REL-%{version}/sharutils-%{version}.tar.bz2
 Source1001: packaging/sharutils.manifest 
-BuildRequires:  gettext
+BuildRequires:  gettext-tools
 
 BuildRoot:  %{_tmppath}/%{name}-%{version}-build
 
@@ -81,3 +82,134 @@ rm -rf %{buildroot}
 %exclude /usr/bin/unshar
 /usr/bin/uudecode
 /usr/bin/uuencode
+%changelog
+* Mon Sep 16 2013 walyong.cho <walyong.cho@samsung.com> - sharutils_4.7-slp2+s4_1 
+- PROJECT: external/sharutils
+- COMMIT_ID: 5d8f6b09f6354025b761a9b2233978498b586b21
+- PATCHSET_REVISION: 5d8f6b09f6354025b761a9b2233978498b586b21
+- CHANGE_OWNER: \"WaLyong Cho\" <walyong.cho@samsung.com>
+- PATCHSET_UPLOADER: \"WaLyong Cho\" <walyong.cho@samsung.com>
+- CHANGE_URL: http://slp-info.sec.samsung.net/gerrit/151421
+- PATCHSET_REVISION: 5d8f6b09f6354025b761a9b2233978498b586b21
+- TAGGER: walyong.cho <walyong.cho@samsung.com>
+- Gerrit patchset approval info:
+- Kyungmin Park <kyungmin.park@samsung.com> Code Review : 2
+- Kyungmin Park <kyungmin.park@samsung.com> Verified : 1
+- CHANGE_SUBJECT: smack execution label delete
+- [Version] sharutils 4.7-4
+- [Project] GT-I8800, Public
+- [Title] smack execution label delete
+- [BinType] PDA/MODEM/CSC
+- [Issue#] N/A
+- [Problem] smack execution label delete
+- [Cause] smack execution label delete
+- [Solution] smack execution label delete
+- [Team] System FW
+- [Developer]  walyong.cho
+- [Request] N/A
+- [Horizontal expansion] N/A
+- [SCMRequest] N/A
+* Tue Feb 16 2010 Anas Nashif <anas.nashif@intel.com> - 4.7
+- Use spectacle
+* Wed Feb  3 2010 Yi Yang <yi.y.yang@intel.com> - 4.7
+- Update to 4.7
+* Tue Dec 16 2008 Anas Nashif <anas.nashif@intel.com> 4.6.3
+- Fixed rpmlint errors in Summary tag
+* Fri Sep 12 2008 Yi Yang <yi.y.yang@intel.com> 4.6.3
+- Mark man and info as %%doc and remove installation warnings of info files
+* Tue Feb 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 4.6.3-2
+- Autorebuild for GCC 4.3
+* Tue Apr 10 2007 Than Ngo <than@redhat.com> - 4.6.3-1
+- 4.6.3
+* Fri Jul 14 2006 Jesse Keating <jkeating@redhat.com> - 4.6.1-2
+- rebuild
+* Fri Feb 10 2006 Jesse Keating <jkeating@redhat.com> - 4.6.1-1.2
+- bump again for double-long bug on ppc(64)
+* Tue Feb  7 2006 Jesse Keating <jkeating@redhat.com> - 4.6.1-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+* Mon Feb  6 2006 Florian La Roche <laroche@redhat.com>
+- 4.6.1
+* Fri Dec  9 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+* Thu Nov  3 2005 Than Ngo <than@redhat.com> 4.6-2
+- fix wrong permission #171889
+* Wed Oct 26 2005 Than Ngo <than@redhat.com> 4.6-1
+- update to 4.6
+* Mon Apr 11 2005 Than Ngo <than@redhat.com> 4.2.1-27
+- apply debian patch to fix insecure temporary file creation
+  in unshar #154049, CAN-2005-0990
+* Thu Mar 31 2005 Than Ngo <than@redhat.com> 4.2.1-26
+- apply patch to fix multiple buffer overflows #152571
+* Mon Mar  7 2005 Than Ngo <than@redhat.com> 4.2.1-25
+- cleanup
+* Sat Mar  5 2005 Than Ngo <than@redhat.com> 4.2.1-24
+- rebuilt
+* Wed Feb  9 2005 Than Ngo <than@redhat.com> 4.2.1-23
+- rebuilt
+* Fri Oct  1 2004 Than Ngo <than@redhat.com> 4.2.1-22
+- fix buffer overflow in shar, (from Ulf Harnhammer)
+* Thu Jun 24 2004 Than Ngo <than@redhat.com> 4.2.1-21
+- add builrequires on gettext, bug #126599
+* Tue Jun 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+* Fri May 21 2004 Than Ngo <than@redhat.com> 4.2.1-19
+- add suse patch, which fixes buffer overflow in handling of -o option, #123230
+* Fri Feb 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+* Mon Jun 16 2003 Than Ngo <than@redhat.com> 4.2.1-17
+- rebuilt
+* Wed Jun  4 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+* Wed Jan 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+* Wed Dec 11 2002 Tim Powers <timp@redhat.com> 4.2.1-13
+- rebuild on all arches
+* Mon Jun 24 2002 Than Ngo <than@redhat.com> 4.2.1-12
+- fixed #66892
+* Fri Jun 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+* Thu May 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+* Sun Apr 14 2002 Than Ngo <than@redhat.com> 4.2.1-9
+- added fix for Unsecure outputfile handling in uudecode (#63303)
+- Copyright -> License
+* Fri May 11 2001 Than Ngo <than@redhat.com>
+- use find_lang macro
+- use mktemp
+* Wed Jul 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+* Sun Jun 18 2000 Than Ngo <than@redhat.de>
+- fix typo (Bug# 12447)
+* Sun Jun 18 2000 Than Ngo <than@redhat.de>
+- rebuilt in the new build environment
+* Thu Jun  8 2000 Than Ngo <than@redhat.de>
+- add %%defattr(-,root,root) (Bug# 11990)
+- use rpm macros
+* Sun May 21 2000 Ngo Than <than@redhat.de>
+- rebuild to put man pages and info files in right place
+* Mon Feb  7 2000 Preston Brown <pbrown@redhat.com>
+- rebuild to gzip man pages
+* Tue Dec 21 1999 Preston Brown <pbrown@redhat.com>
+- sharutils 4.2.1 for Y2K (2 digit date) fix.
+- ja message catalog move (#7878)
+* Tue Sep  7 1999 Jeff Johnson <jbj@redhat.com>
+- handle spaces in uuencoded file names (David Fox <dsfox@cogsci.ucsd.edu>).
+* Wed Jul 28 1999 Cristian Gafton <gafton@redhat.com>
+- use the /usr/share/locale for the localedir instead of /usr/lib/locale
+  (#2998)
+* Sun Mar 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 12)
+* Wed Dec 30 1998 Cristian Gafton <gafton@redhat.com>
+- build for glibc 2.1
+* Fri Apr 24 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+* Sat Apr 11 1998 Cristian Gafton <gafton@redhat.com>
+- manhattan rebuild
+* Fri Oct 17 1997 Donnie Barnes <djb@redhat.com>
+- ALRIGHT!  Woo-hoo!  Erik already did the install-info stuff!
+- added BuildRoot
+- spec file cleanups
+* Sun Sep 14 1997 Erik Troan <ewt@redhat.com>
+- uses install-info
+* Fri Jul 18 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
